@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout>
+  <h1>Contact</h1>
+  <p>Interested in tastings, events, or collaborations? Reach out:</p>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+    <label>
+      Name:
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      Email:
+      <input type="email" name="email" required />
+    </label>
+    <label>
+      Message:
+      <textarea name="message" required></textarea>
+    </label>
+    <button type="submit">Send</button>
+  </form>
+</BaseLayout>
