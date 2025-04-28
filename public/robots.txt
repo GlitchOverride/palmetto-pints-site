@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://palmettopints.com/sitemap.xml
