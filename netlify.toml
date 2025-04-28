@@ -1,6 +1,4 @@
-[build]
-  publish = "dist"
-  command = "npm run build"
-
-[dev]
-  command = "npm run dev"
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-eval' https://unpkg.com https://identity.netlify.com; object-src 'none'"
