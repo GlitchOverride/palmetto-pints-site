@@ -2,9 +2,6 @@ backend:
   name: github
   repo: GlitchOverride/palmetto-pints-site
   branch: master
-  site_domain: palmettopints.com
-  base_url: https://palmettopints.com
-  auth_scope: repo
 
 media_folder: "public/uploads"
 publish_mode: editorial_workflow
