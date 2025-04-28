@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: GlitchOverride/palmetto-pints-site
+  branch: master
+  site_domain: palmettopints.com
+  base_url: https://palmettopints.com
+  auth_scope: repo
+
+media_folder: "public/uploads"
+publish_mode: editorial_workflow
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "events"
+    label: "Events"
+    folder: "src/content/events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
